@@ -1,0 +1,16 @@
+*******************************
+Code ·¡Ë Ÿµ√§Ÿ≥
+*******************************
+#include <iostream>
+using namespace std;
+int main(){
+	int num ;
+		cout << "Enter Number :";
+	cin >> num;
+
+		for (int n = 1 ; n<=12 ; n=n+1)
+			
+			cout << num << "X" << n  << "=" <<  num * n   <<endl;
+	
+	return(0);
+}

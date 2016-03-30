@@ -1,0 +1,109 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	char choice;
+	float price,money;
+	cout << "Enter all buy price of product : ";
+	cin >> price ;
+	cout << "Are you member? y/n :";
+	cin >> choice;
+	cout << endl;
+
+	if(choice=='y')
+	{
+		{
+			if (price<500)
+			{		
+				cout << "Discount for member :" << price*5/100 << endl;
+				cout << "Net price of product to pay :" << price-(price*5/100)<<endl;
+				cout << "Enter number pay of customer :";
+				cin >> money;
+		
+					if (money<price||money<0)cout << "It doesn't enough" <<endl;
+					else
+					{cout << "Change to customer :" << money-(price-(price*5/100))<<endl;}
+			}
+			else if (price<=2000)
+			{	
+				cout << "Discount of sale price :" << price*5/100 <<endl;
+				cout << "Discount for member :" << price*5/100 << endl;
+				cout << "Net price of product to pay :" << price-((price*5/100)+(price*5/100))<<endl;
+				cout << "Enter number pay of customer :";
+				cin >> money;
+		
+					if (money<price||money<0)cout << "It doesn't enough" <<endl;
+					else {cout << "Change to customer :" << money-(price-((price*5/100)*2))<<endl;}
+			}
+			else if (price<=4000)
+			{	
+				cout << "Discount of sale price :" << price*7/100 <<endl;
+				cout << "Discount for member :" << price*5/100 << endl;
+				cout << "Net price of product to pay :" << price-((price*7/100)+(price*5/100))<<endl;
+				cout << "Enter number pay of customer :";
+				cin >> money;
+		
+					if (money<price||money<0)cout << "It doesn't enough" <<endl;
+					else {cout << "Change to customer :" << money-(price-((price*5/100))-(price*7/100))<<endl;}
+			}
+				else if (price>4000)
+			{	
+				cout << "Discount of sale price :" << price*10/100 <<endl;
+				cout << "Discount for member :" << price*5/100 << endl;
+				cout << "Net price of product to pay :" << price-((price*10/100)+(price*5/100))<<endl;
+				cout << "Enter number pay of customer :";
+				cin >> money;
+		
+					if (money<price||money<0)cout << "It doesn't enough" <<endl;
+					else {cout << "Change to customer :" << money-(price-((price*5/100))-(price*10/100))<<endl;}
+			}
+		}
+			if(choice=='n')
+			{
+				if (price<500)
+			{
+				cout << "Enter number pay of customer :";
+				cin >> money;
+		
+					if (money<price||money<0)cout << "It doesn't enough" <<endl;
+					else
+					{cout << "Change to customer :" << money-(price-(price*0/100))<<endl;}
+			}
+			else if (price<=2000)
+			{	
+				cout << "Discount of sale price :" << price*5/100 <<endl;
+				cout << "Net price of product to pay :" << price-(price*5/100)<<endl;
+				cout << "Discount for member :";
+				cin >> money;
+		
+					if (money<price||money<0)cout << "It doesn't enough" <<endl;
+					else {cout << "Change to customer:" << money-(price-(price*5/100))<<endl;}
+			}
+			else if (money<=4000)
+			{	
+				cout << "Discount of sale price :" << price*7/100 <<endl;
+				cout << "Net price of product to pay :" << price-(price*7/100)<<endl;
+				cout << "Discount for member :";
+				cin >> money;
+		
+					if (money<price||money<0)cout << "It doesn't enough" <<endl;
+					else {cout << "Change to customer :" << money-(price-(price*7/100))<<endl;}
+			}
+				else if (money>4000)
+			{	
+				cout << "Discount of sale price :" << price*10/100 <<endl;
+				cout << "Net price of product to pay :" << price-(price*10/100)<<endl;
+				cout << "Discount for member :";
+				cin >> money;
+		
+					if (money<price||money<0)cout << "It doesn't enough" <<endl;
+					else {cout << "Change to customer :" << money-(price-(price*10/100))<<endl;}
+			}
+			
+		}
+			
+	}
+	
+	return(0);
+}

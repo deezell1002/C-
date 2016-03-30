@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int a,b,choice;
+	for (int  i = 0 ;;)
+	{
+	cout << "Calculator Menu" << endl;
+	cout << "1.Add" << endl;
+	cout << "2.Sub" << endl;
+	cout << "3.koon" << endl;
+	cout << "4.han" << endl;
+	
+	cout << "Enter Number 1 : " ;
+	cin >> a ;
+	cout << "enter number 2 : " ;
+	cin >> b;
+	cout << "Enter Choice : " ;
+	cin >> choice;
+	if (choice ==1) cout << a << "+" << b << "=" << a + b << endl;
+	if (choice ==2) cout << a << "-" << b << "=" << a - b << endl;
+	if (choice ==3) cout << a << "*" << b << "=" << a * b << endl;
+	if (choice ==4) cout << a << "/" << b << "=" << a / b << endl;
+	else if(choice !=4 && choice !=3 && choice != 2 && choice != 1)cout << "error" << endl << endl;
+	}
+}

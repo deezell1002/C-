@@ -1,0 +1,49 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+	int father,child,x,y;
+
+		cout << "Enter old farter : ";
+
+		cin >> father;
+
+		cout << "Enter old children : ";
+
+		cin >> child;
+
+		x=child*2;
+
+if(father<x)
+
+{
+
+y=x-father;
+
+cout << "Last " << y << " years old I'll double the child" << endl;
+
+}
+
+else if(father>x)
+
+{
+
+y=father-x;
+
+cout << y << " years old I'll double the child" << endl;
+
+}
+
+else 
+
+cout << "This year I'll double the child ages" << endl;
+
+ 
+
+return(0);
+
+}

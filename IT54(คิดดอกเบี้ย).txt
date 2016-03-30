@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int  money=0,tax=0,money1=0;
+	cout << "Enter your money : ";
+	cin >> money;
+	if(money > 100000)
+	{ 
+		tax = tax + ((100000*5)/100);
+		money = money - 100000;
+
+			if(money >= 400000)
+		{
+			tax = tax + ((400000*10)/100);
+			money = money - 400000;
+		
+				if(money >= 500000)
+			{
+				tax = tax + ((500000*20)/100);
+				money = money - 500000;
+
+					if(money >= 3000000)
+				{
+					tax = tax + (3000000*30/100);
+					money = money - 3000000;
+
+						if(money > 4000000)
+					{
+						tax = tax + (money * 37 / 100);
+						
+						}
+			
+				else  tax = tax + (money * 37 /100);
+					}
+						else tax = tax + (money * 30 / 100);
+				}
+							else tax = tax + ((money * 20) /100);
+			}
+									else tax = tax + ((money * 10)/100);
+	}
+											else tax = tax + ((money *5)/100);
+
+												if (money<100000)
+												{ tax = tax + ((money *5)/100);
+												}
+
+	
+	cout << "You have to pay :  " << tax << "  Baht" <<  endl;
+
+	return(0);
+		
+
+}

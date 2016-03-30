@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string bbb(int m);
+int main()
+{	
+	
+	int d,m,y;
+	scanf("%d/%d/%d",&d,&m,&y);
+	
+	cout << bbb(m) << " " << d << ", " << y <<endl;
+		
+        return(0);
+}
+
+string bbb(int m)
+{
+	string a;
+	if(m==1) a = "January";
+	else if (m==2) a = "February";
+	else if (m==3) a = "March";
+	else if (m==4) a = "April";
+	else if (m==5) a = "May";
+	else if (m==6) a = "June";
+	else if (m==7) a = "July";
+	else if (m==8) a = "August";
+	else if (m==9) a = "September";
+	else if (m==10) a = "October";
+	else if (m==11) a = "November";
+	else a = "December";
+	return(a);
+}

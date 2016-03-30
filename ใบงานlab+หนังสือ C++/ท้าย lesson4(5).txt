@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int number1=0,number2=0,a=1,b=0;
+	cout << "Enter Begin : ";
+	cin >> number1;
+	cout << "Enter End : ";
+	cin >> number2;
+	cout << endl;
+	for(int i=number1;number1<=number2;i++)
+	{
+
+		for(int j=1;j<=12;j++)
+		{
+			b=number1*j;
+			cout << number1 << "x" << j << "=" << b <<endl;
+		}
+		number1+=1;
+		cout << endl;
+	}
+	
+			
+	return(0);
+		
+}

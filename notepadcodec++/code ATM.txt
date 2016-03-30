@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int choice ,a,b=0;
+	for (;;)
+	{
+	cout << "----------KMUTNB ATM----------"<<endl;
+	cout << "1.add" << endl;
+	cout << "2.out" << endl;
+	cout << "3.check" << endl;
+	cout << "4.exit" << endl;
+	cout << "Enter choice : " ;
+	cin >> choice ;
+	
+	if (choice==1) {cout << "add money : " ;
+	cin >> a ;
+	b = b + a;}
+	else if (choice ==2) {cout << "money out : " ;
+	cin >> a ;
+	b = b - a;}
+	
+	else if (choice!=1 && choice!=2 && choice!=3 && choice!=4) {cout << "please enter your choice again" << endl;}
+	
+	else if (choice ==3) {cout << "your money : " << b << endl;}
+	
+	
+	else if (choice ==4) return(0);
+	
+}
+	return(0);
+}

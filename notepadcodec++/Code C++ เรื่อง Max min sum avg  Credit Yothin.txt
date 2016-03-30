@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a,b,c;
+	cout << "Enter your number : " << endl;
+	cin >> a >> b >> c ;
+	cout << "Average : " << (a+b+c)/3 << endl;
+	cout << "Sum : " << a+b+c  << endl;
+	if (a > b && a > c) cout << "Max : " << a << endl;
+	if ( b > a && b > c)cout << "Max : " << b << endl;
+	if (c > a && c > b) cout << "Max : " << c << endl;
+	if ( a < b && a < c) cout << "Min : " << a << endl;
+	if ( b < a && b < c) cout << "Min : " << b << endl;
+	if (c < a && c < b)  cout << "Min : " << c << endl;
+	return (0);
+}

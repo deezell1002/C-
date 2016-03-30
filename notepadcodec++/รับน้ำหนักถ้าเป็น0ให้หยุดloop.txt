@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int m;
+	for (int  i = 0 ; ;)
+	{
+	cout << "enter your weight : " ;
+	cin >> m ; 
+	if (m < 53) cout << "thin" << endl;
+	else if (m > 75) cout << "heavy" << endl;
+	else cout << "normal" << endl;
+	if (m==0) return (0) ;
+	}
+	return(0);
+}

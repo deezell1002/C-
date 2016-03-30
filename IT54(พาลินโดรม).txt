@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int number,number1,a=1,number2=0,b=1,number3=0,number4=0;
+	cout << "Enter your number : ";
+	cin >> number;
+	number1 = number;
+	cout << endl;
+	for(int i=1;number/i>0;i*=10)
+	{
+		a*=10;
+	}
+	a/=10;
+		for(int i=10;number%i>0;)
+		{
+			number2+=((number%i)*a);
+			number = number/i;
+			a/=10;
+		}	
+
+	number3=number1+number2;
+	a=1;
+	for(int i=1;number3/i>0;i*=10)
+	{
+		a*=10;
+	}
+	a/=10;
+
+		for(int j=10;number3%j>0;)
+		{
+			number4+=((number3%j)*a);
+			number3 = number3/j;
+			a/=10;//ตอนนี้ number3จะเท่ากับ 0
+			
+		}
+	cout << "Result is : " << number2 << endl;
+	cout << endl;
+	cout << "Summation is : " << number1+number2 <<endl;
+	cout << endl;
+
+		if((number1+number2)==number4) 
+		{
+			cout << "The result is palindorm" << endl;
+		}
+		else cout << "The result isn't palindorm" << endl;
+		cout << endl;
+	return(0);
+}

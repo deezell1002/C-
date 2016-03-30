@@ -1,0 +1,17 @@
+เอาโจทย์นี่ไปทำกันนะ
+ให้เขียนโปรแกรมเช็คอายุ
+ให้รับค่ามาสองค่าคืออายุของพ่อและอายุของลูกโดยให้แสดงโชว์ว่าอีกกี่ปีหรือผ่านมาแล้วกี่ปีที่พ่อมีอายุเป็นสองเท่าของลูก
+EX >>>> Enter old faster : 25
+Enter old children : 10
+5 years old I'll double the child (อีก 5 ปี พ่อมีอายุสองเท่าของลูก ประมานนี้ ไม่เก่ง eng)
+
+Enter old faster : 30
+Enter old children : 15
+This year I'll double the child ages(ปีนี้ พ่อจะมีอายุสองเท่าของลูก)
+
+Enter old faster : 35
+Enter old children : 20
+Last 5 years old I'll double the child(ผ่านมาแล้ว 5 ปี พ่อจะมีอายุสองเท่าของลูก)
+
+ไม่เข้าใจโจทย์ตรงไหน ถามเลย เขียนไม่อยาก แต่ตีโจทย์หาสมการยากหน่อย
+

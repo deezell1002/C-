@@ -1,0 +1,40 @@
+***********************
+Code การหาพื้นที่ 
+***********************
+
+#include <iostream>
+using namespace std;
+
+int main (){
+	
+	double Choice , Width , Height ,R ,PI = 3.14 ,Base ; 
+
+	cout << "Menu" <<endl;
+	cout << "1) Rectangle" << endl;
+	cout << "2) Circle" << endl;
+	cout << "3) Triangle" << endl;
+	cout << "Choice: " ;
+	cin >> Choice;
+	
+	if (Choice == 1)
+	{cout << "Enter Width: " ;
+	cin >> Width;
+
+	cout << "Enter Height: " ;
+	cin >> Height;
+	cout << "Rectangle Area is " << Width * Height << endl; }
+	
+	else if (Choice == 2)  
+	{cout << "Enter R: " ;
+	cin >> R;
+	cout << "Cirle Area is " << PI * (R * R) <<endl; }
+
+	else if (Choice ==3)
+	{cout << "Enter Base: " ;
+		cin >> Base;
+		cout << "Enter height: " ;
+		cin >> Height;
+		cout << "Triangle Area is " << 0.5 * Base * Height << endl; }
+
+	return(0);
+}

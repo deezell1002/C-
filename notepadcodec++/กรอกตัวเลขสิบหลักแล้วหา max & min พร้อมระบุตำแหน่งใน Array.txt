@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	int num[10] ,max=0 ,location = 0,min = 0,location2=0;
+	for(int i=0;i<=9;i++)
+	{
+		cout << "Enter number " << i+1 << " : " ;
+		cin >> num[i] ;
+	}
+	
+	for(int i=0;i<=9;i++)
+	{
+		
+		if(max <= num[i]){max = num[i];
+		location = i+1;}
+		else max = max;
+	}
+	min = num[0];
+	for(int i=0;i<=9;i++)
+	{
+		
+		if(min >=num[i]){min = num[i];
+		location2 = i+1;}
+		else min = min;
+	}
+	
+		cout << endl;
+		cout << "max is   " <<  max << "   and location is  " <<  location <<  endl;
+		cout << "min is   " <<  min << "   and location is  " <<  location2 <<  endl;
+	
+	return(0);
+}
+

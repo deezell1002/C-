@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int choice,a,b=0,c;
+		for (int i = 0 ; ;)
+	{
+
+	cout << "-----KMUTNB ATM-----" << endl;
+	cout << "Please enter the number below"<<endl;
+	cout << "1.take money out from your account"<<endl;
+	cout << "2.check your account"<<endl;
+	cout << "3.add money to your account"<<endl;
+	cout << "4.Exit"<<endl;
+
+		cout << "enter choice : ";
+		cin >> choice;
+		
+		if (choice ==1){
+			cout << "enter money : " ;
+			cin >> a;
+		}
+		else if (choice ==2){
+				cout << "money : " << a <<endl;
+		}
+		else if (choice ==3) cout << "enter money: " ;
+		cin >> c
+	} 
+	
+	return(0);
+}

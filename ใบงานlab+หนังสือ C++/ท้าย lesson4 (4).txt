@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num=1000,count=0,a=0,j=0;
+	cout << endl;
+	cout << "Odd number mod 3 and 6 equal 0 is : " ;
+			for(int j=500;j>=500&&j<=1000;j++)
+			{
+				if(j%3==0&&j%6==0)
+				{
+					
+					cout << j << " " ;
+					a = a+j;
+					count+=1;
+				}
+			}
+	cout << endl;
+	cout << endl;
+	cout << "Summation of Odd number : " << a << endl;	
+	cout << "Average of Odd number : " << (float)a/count << endl;
+	cout << "Amount of Odd number mod 3 and 6 equal 0 :  " << count  << endl;
+	
+	return(0);
+		
+}

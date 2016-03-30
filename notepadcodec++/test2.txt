@@ -1,0 +1,46 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string bbb(int m);
+string aaa(char *s);
+int main()
+{	
+	char a[11],*s;
+	cout <<"Enter message :";
+	cin >> a;
+	s = a;
+	
+	cout << aaa(s) << " " << *(s) << *(s+1) << " , " << *(s+6) << *(s+7) << *(s+8) << *(s+9) << endl;
+
+        return(0);
+}
+
+
+string aaa(char *s)
+{
+	string a;
+	
+	
+	if ((*(s+3))=='0'){
+		if((*(s+4))=='1') a = "January";
+		else if ((*(s+4))=='2') a = "Febuary";
+		else if ((*(s+4))=='3') a = "March";
+		else if ((*(s+4))=='4') a = "April";
+		else if ((*(s+4))=='5') a = "May";
+		else if ((*(s+4))=='6') a = "June";
+		else if ((*(s+4))=='7') a = "July";
+		else if ((*(s+4))=='8') a = "August";
+		else a = "September";
+	}
+	
+
+	else if((*(s+3))=='1')
+	{
+		if ((*(s+4))=='0'){ a = "October";}
+		else if (*(s+4)=='1') {a = "November";}
+		else a = "December";
+	}
+	else a = "Enter month again" ;
+	return(a);
+}

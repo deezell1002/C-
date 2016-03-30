@@ -1,0 +1,58 @@
+************************
+โจทย์
+************************
+จงเขียนโปรแกรมฝากและถอนเงิน โดยมีเมนู ฝาก, ถอนเงิน,ตรวจสอบยอดเงิน และเมื่อฝาก หรือถอนเงิน หรือเช็คยอดคงเหลือ เสร็จแล้วให้วนกลับมาที่เมนูใหม่โดยไม่มีการออกจากโปรแกรม โดยกำหนดให้มีเงินเริ่มต้นในบัญชี 3000 บาท
+
+ตัวอย่าง Menu
+1) Deposit  \\ฝากเงิน
+2) Withdraw  \\ถอนเงิน
+3) Check Balance \\เช็คยอดเงิน
+Enter choice : 1
+Enter Amount to Deposit : 250
+Balance is 3250
+
+    Menu
+
+
+************************
+Code โปรแกรม ฝากและถอนเงิน
+************************
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int num ,b=3000  ;
+	char choice;
+	for (;;)
+	{
+		cout << endl << "Menu" <<endl;
+		cout << "1) Deposit" << endl; 
+		cout << "2) Withdraw" << endl;
+		cout << "3) Check Balance" << endl;
+		cout << "Enter choice : " ;
+		cin >> choice ;
+
+			switch (choice)
+			{
+			case '1' :
+				cout << "Enter Amount to Deposit : ";
+				cin >> num;
+				b = b + num;
+				cout << "Balance is : " << b << endl;
+			break;
+			case '2' :
+				cout << "Enter Amount to Withdraw : " ;
+				cin >> num;
+				b = b - num;
+				cout << "Balance is : " << b << endl;
+			break;
+			case '3' :
+				cout << "Balance is: " << b<< endl;
+			break;
+			}
+	}
+	return(0);
+}
+
+

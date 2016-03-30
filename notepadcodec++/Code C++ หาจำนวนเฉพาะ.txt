@@ -1,0 +1,23 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int a;
+	cout << "enter number : ";
+	cin >> a;
+	for (int b=2;b<=a;b++)
+	{
+		
+		if (a%b==0&&a!=b)
+		{
+		cout << "no" << endl;
+		b=b+a;
+		}
+		else if (a%b==0&&a==b)
+		{
+		cout << "yes" << endl;
+		}
+	}
+	return(0);
+}
